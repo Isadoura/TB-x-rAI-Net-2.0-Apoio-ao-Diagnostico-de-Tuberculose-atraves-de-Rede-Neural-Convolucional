@@ -29,4 +29,3 @@ leakage* foram removidas imagens duplicadas, resultando em um **total de 1378 im
 aplicado o filtro CLAHE, permitindo melhorar o contraste dos raios-x.
 
 ## Arquitetura da rede:
-
