@@ -7,7 +7,7 @@ TB x-rAI Net 2.0: Evolução no Apoio ao Diagnóstico de Tuberculose em Imagens 
 O treinamento do modelo foi realizado no ambiente do <em>Google Colab</em> utilizando uma GPU Nvidia T4 Tensor Core a partir de um <em>script</em> em linguagem Python com a utilização das bibliotecas <em>TensorFlow</em>, <em>Keras</em>, <em>NumPy</em>, <em>Matplotlib</em> e <em>Scikit-Learn</em>. </p><br>
 
 
-## Base de dados:
+## Base de dados
 
 Para o desenvolvimento e construção da CNN proposta foram utilizados quatro *datasets* públicos de raio-x torácicos de casos normais e de TB:
 - *Belarus Tuberculosis Portal* - [Frapa 2021]
@@ -23,12 +23,12 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 <p align="justify"><strong>Total de imagens : 1382</strong></p><br>
 
 
-## Pré-processamento:
+## Pré-processamento
 
 <p align="justify">Nesta etapa, as imagens passam por uma transformação para uma escala de cinza, são todas redimensionadas para 256x256 <em>pixels</em>. Além disso, a fim de evitar <em>data leakage</em> foram removidas imagens duplicadas, resultando em um total de 1378 imagens, após a remoção de 4 imagens do <em>dataset</em> de Belarus. Ademais, foi aplicado o filtro <em>CLAHE</em>, permitindo melhorar o contraste dos raios-x. </p><br>
 
 
-## Arquitetura da rede:
+## Arquitetura da rede
 
 <p align="justify">A arquitetura da rede desenvolvida utiliza cinco blocos convolucionais residuais, permitindo que informações vindas das entradas (radiografias) sejam preservadas e combinadas com as características adquiridas ao longo das operações de convolução. Em cada um dos blocos são aplicadas duas convoluções 3x3, seguidas de um <em>BatchNormalization</em>, função de ativação ReLU, mecanismo de atenção <em>Squeeze-and-Excitation</em> (<em>SE</em>), para a definição da importância dos canais da rede e recalibração desses canais. Além disso, é utilizada uma operação de <em>Max Pooling</em>, na redução do custo computacional da CNN, diminuição espacial e na preservação de ativações mais elevadas, uma camada <em>GAP</em> (<em>Global Average Pooling</em>), realizando o cálculo da média dos valores dos canais, obtidos anteriormente no <em>Max Pooling</em>. Ao fim, o método aplica <em>dropout</em> para reduzir o <em>overfitting</em> e utiliza uma camada totalmente conectada com uma ativação <em>Sigmoid</em>, para a geração binária das classificações (TB e Saudável). </p>
 
@@ -88,7 +88,7 @@ Ao comparar com [Cruz et al. 2026] os resultados obtidos para o novo modelo demo
 
 Para trabalhos futuros propõe-se realizar a validação da TB x-rAI Net 2.0 com profissionais da área de saúde, adicionar uma base de dados local, proveniente do Hospital HU da FURG e seguir melhorando o modelo.</p><br>
 
-## Extra:
+## Extra
 
 <p align="justify"> Com o objetivo de facilitar a utilização do modelo por profissionais especializados da saúde definiu-se a necessidade de criar uma interface <em>web</em> intuitiva e amigável, o qual permitisse o <em>upload</em> da radiografia a ser analisada e gerado um resultado, com base na inferência da TB x-rAI Net 2.0.
 
@@ -133,7 +133,7 @@ Por fim, na página de resultados são demonstradas as análises para a imagem s
 
 É importante ressaltar que a ferramenta encontra-se em fase de desenvolvimento, ainda não publicada de forma <em>online</em>. As etapas futuras de construção envolvem a adição de novas funcionalidades como o cadastro do usuário e histórico de análises.</p>
 
-### Referências:
+### Referências
 
 <p align="justify"> Chauhan, A., Chauhan, D., Rout, C. (2014). Role of Gist and PHOG Features in Computer-Aided Diagnosis of Tuberculosis without Segmentation. National Library of Medicine, 9(11). 
   
