@@ -101,6 +101,36 @@ A ferramenta possui três telas principais, como demonstrado nas figuras logo ab
 - Tela de *upload*;<br>
 - Tela de resultados.
 
+<p align="center">
+  <img src="" alt="Tela principal do site" width="700">
+  <br>
+  <strong>Figura 3</strong>: Tela de início do <em>website</em>.
+</p><br>" 
+
+<p align="center">
+  <img src="" alt="Tela de upload do site" width="700">
+  <br>
+  <strong>Figura 4</strong>: Tela de <em>upload</em> do <em>website</em>.
+</p><br>"
+
+<p align="center">
+  <img src="" alt="Tela de resultados do site" width="700">
+  <br>
+  <strong>Figura 5</strong>: Tela de resultados do <em>website</em> - parte 1.
+</p><br>"
+
+<p align="center">
+  <img src="" alt="Tela de resultados do site" width="700">
+  <br>
+  <strong>Figura 6</strong>: Tela de resultados do <em>website</em> - parte 2.
+</p><br>"
+
+<p align="center">
+  <img src="" alt="Tela de resultados do site" width="700">
+  <br>
+  <strong>Figura 6</strong>: Tela de resultados do <em>website</em> - parte 3.
+</p><br>"
+
 
 <p align=justify> Conforme ilustrado na figura 1, a página inicial apresenta aos usuários um menu interativo que permite uma navegação facilitada, juntamente com um panorama geral das funcionalidades e propósito da ferramenta, seguido da documentação do modelo, da referência à CNN base e de exemplos de <em>datasets</em> com imagens públicas de TB.  
   
