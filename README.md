@@ -94,7 +94,7 @@ Para trabalhos futuros propõe-se realizar a validação da TB x-rAI Net 2.0 com
 
 <p align="justify"> Com o objetivo de facilitar a utilização do modelo por profissionais especializados da saúde definiu-se a necessidade de criar uma interface <em>web</em> intuitiva e amigável, o qual permitisse o <em>upload</em> da radiografia a ser analisada e gerado um resultado, com base na inferência da TB x-rAI Net 2.0.
 
-Com base nisso, o <site> foi desenvolvido utilizando no <em>frontend<em> o <em>JavaScript<em>, HTML e <em>Tailwind CSS<em> para a geração de um <em>layout</em> responsivo e estilizado. Para a integração com a CNN utilizou-se o <em>microframework Flask</em> do Python, permitindo a obtenção de resultados em tempo real.</p>
+Com base nisso, o <site> foi desenvolvido utilizando no <em>frontend</em> o <em>JavaScript</em>, HTML e <em>Tailwind CSS</em> para a geração de um <em>layout</em> responsivo e estilizado. Para a integração com a CNN utilizou-se o <em>microframework Flask</em> do Python, permitindo a obtenção de resultados em tempo real.</p>
 
 <p align="justify"> A ferramenta possui três telas principais, como demonstrado nas figuras logo abaixo: </p>
 - Tela de início com as principais informações;
