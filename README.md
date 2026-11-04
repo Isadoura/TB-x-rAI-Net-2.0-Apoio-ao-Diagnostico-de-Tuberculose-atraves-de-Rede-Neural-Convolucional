@@ -37,4 +37,5 @@ O modelo também utiliza três modelos idênticos porém com configurações dis
 - Modelo 3: Filtro de 128 e *dropout* de 0,5.
 
 ![Arquitetura da CNN proposta](https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png)
+
 **Figura 1**: Arquitetura da TB x-rAI Net 2.0.
