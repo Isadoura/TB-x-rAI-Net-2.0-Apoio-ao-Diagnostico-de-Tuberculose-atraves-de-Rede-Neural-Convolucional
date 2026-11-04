@@ -98,7 +98,7 @@ Com base nisso, o <site> foi desenvolvido utilizando no <em>frontend</em> o <em>
 
 <p align="justify"> A ferramenta possui três telas principais, como demonstrado nas figuras logo abaixo: </p>
 - Tela de início com as principais informações;
-- <p>Tela de <em>upload</em></p>;
+- Tela de *upload*;
 - Tela de resultados.
 
 
