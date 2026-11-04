@@ -25,7 +25,7 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 
 <p text-align="justify">Nesta etapa, as imagens passam por uma transformação para uma escala de cinza, são todas redimensionadas para 256x256 *pixels*. Além disso, a fim de evitar *data 
 leakage* foram removidas imagens duplicadas, resultando em um **total de 1378 imagens**, após a remoção de 4 imagens do *dataset* de Belarus. Ademais, foi 
-aplicado o filtro *CLAHE*, permitindo melhorar o contraste dos raios-x.</p>
+aplicado o filtro *CLAHE*, permitindo melhorar o contraste dos raios-x. </p>
 
 ## Arquitetura da rede:
 
