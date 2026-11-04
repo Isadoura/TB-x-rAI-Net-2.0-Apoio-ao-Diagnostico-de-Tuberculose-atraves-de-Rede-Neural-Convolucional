@@ -102,8 +102,7 @@ A ferramenta possui três telas principais, como demonstrado nas figuras logo ab
 - Tela de resultados.
 
 
-
-<br><p align=justify> Conforme ilustrado na figura 1, a página inicial apresenta aos usuários um menu interativo que permite uma navegação facilitada, juntamente com um panorama geral das funcionalidades e propósito da ferramenta, seguido da documentação do modelo, da referência à CNN base e de exemplos de <em>datasets</em> com imagens públicas de TB.  
+<p align=justify> Conforme ilustrado na figura 1, a página inicial apresenta aos usuários um menu interativo que permite uma navegação facilitada, juntamente com um panorama geral das funcionalidades e propósito da ferramenta, seguido da documentação do modelo, da referência à CNN base e de exemplos de <em>datasets</em> com imagens públicas de TB.  
   
 Para realizar o <em>upload</em> das radiografias (figura 2), o usuário é redirecionado a uma tela exclusiva para esse fim, mostrando quais são os formatos permitidos de imagens. Destaca-se que a definição do <em>upload</em> de uma única imagem possibilitou a análise rápida do modelo, gerando os resultados em poucos segundos de espera, tornando-se um apoio a decisões rápidas e mais assertivas para médicos e profissionais da saúde, mas de forma a não substituir a análise clínica. Além disso, a definição do <em>upload</em> de uma única radiografia também foi pensada na usabilidade de um profissional da área.
 
