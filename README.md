@@ -46,7 +46,7 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 
 
 ## Divisão dos dados de treinamento, validação e teste
-<p align="justify">A estratégia de divisão definida utilizou uma proporção de 70% das imagens para treino, 15% para validação e 15% para teste. Antes de realizar a separação da base dos dados ocorre uma identificação a nível de paciente para cada uma das radiografias usadas no modelo e remoção de imagens duplicadas. Isso permitiu evitar que uma mesma radiografia de um determinado paciente aparecesse de maneira simultânea em mais de um conjunto.
+<p align="justify">A estratégia de divisão definida utilizou uma proporção de <strong>70% das imagens para treino, 15% para validação e 15% para teste</strong>. Antes de realizar a separação da base dos dados ocorre uma identificação a nível de paciente para cada uma das radiografias usadas no modelo e remoção de imagens duplicadas. Isso permitiu evitar que uma mesma radiografia de um determinado paciente aparecesse de maneira simultânea em mais de um conjunto.
 
 Na etapa de <strong>treino</strong>, são definidos lotes contendo 16 imagens e essas são embaralhadas a cada época, de forma que a rede nunca receba a mesma sequência. Ademais, é aplicado aumento de dados (<em>data augmentation</em>) por meio do *ImageDataGenerator* da biblioteca <em>Keras</em>. As transformações aplicadas nas radiografias envolvem: </p>
 
@@ -62,7 +62,7 @@ Os três modelos do <em>ensemble learning</em> foram treinados por até 50 époc
 
 <p align="justify">Já na etapa de <strong>validação</strong> as métricas da AUC, acurácia, sensibilidade, precisão e função de perda foram avaliadas. As probabilidades da função de ativação <em>Sigmoid</em> foram utilizadas para o cálculo da AUC. Essas probabilidades definiram os pesos a serem aplicados a cada um dos modelos de <em>ensemble</em>. O <em>threshold</em> de classificação foi estabelecido por meio do Índice de Youden na curva ROC e métrica da sensibilidade.</p>
 
-<p align="justify">Por fim, na etapa de teste, o <em>threshold</em> definiu a classificação final de cada imagem e os pesos do <em>ensemble</em> foram combinados por meio de uma média ponderada.</p>
+<p align="justify">Por fim, na etapa de <strong>teste</strong>, o <em>threshold</em> definiu a classificação final de cada imagem e os pesos do <em>ensemble</em> foram combinados por meio de uma média ponderada.</p>
 
 <p align="center">
   <img src="blob/main/imagens/" alt="Funcionamento da rede" width="800">
