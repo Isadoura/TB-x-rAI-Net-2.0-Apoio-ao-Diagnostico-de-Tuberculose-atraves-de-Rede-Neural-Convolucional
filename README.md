@@ -85,3 +85,28 @@ Ao comparar com [Cruz et al. 2026] os resultados obtidos para o novo modelo demo
 <p align="center">
   <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tabela%202%20artigo%20eramia.png" alt="tabela 2" width="600">
 </p><br>
+
+<p align="justify"> De acordo com o estudo de ablação, nota-se que a remoção individual de cada técnica reduziu o desempenho do modelo completo. Cabe destacar o impacto referente a remoção do <em>ensemble learning</em>, mecanismo <em>SE</em> e <em>CLAHE</em>, o qual diminuiu a acurácia e a sensibilidade. Embora a retirada das estratégias citadas tenham exibido uma precisão superior ao modelo completo, o uso combinado dessas elevou os valores encontrados nas demais medidas.
+
+Para trabalhos futuros propõe-se realizar a validação da TB x-rAI Net 2.0 com profissionais da área de saúde, adicionar uma base de dados local, proveniente do Hospital HU da FURG e seguir melhorando o modelo.</p>
+
+## Extra:
+
+<p align="justify"> Com o objetivo de facilitar a utilização do modelo por profissionais especializados da saúde definiu-se a necessidade de criar uma interface <em>web</em> intuitiva e amigável, o qual permitisse o <em>upload</em> da radiografia a ser analisada e gerado um resultado, com base na inferência da TB x-rAI Net 2.0.
+
+Com base nisso, o <site> foi desenvolvido utilizando no <em>frontend<em> o <em>JavaScript<em>, HTML e <em>Tailwind CSS<em> para a geração de um <layout> responsivo e estilizado. Para a integração com a CNN utilizou-se o <em>microframework Flask</em> do Python, permitindo a obtenção de resultados em tempo real.</p>
+
+<p align="justify"> A ferramenta possui três telas principais, como demonstrado nas figuras logo abaixo: </p>
+- Tela de início com as principais informações;
+- <p>Tela de <em>upload</em></p>;
+- Tela de resultados.
+
+
+
+<p align=justify> Conforme ilustrado na figura 1, a página inicial apresenta aos usuários um menu interativo que permite uma navegação facilitada, juntamente com um panorama geral das funcionalidades e propósito da ferramenta, seguido da documentação do modelo, da referência à CNN base e de exemplos de <em>datasets</em> com imagens públicas de TB.  
+  
+Para realizar o <em>upload</em> das radiografias (figura 2), o usuário é redirecionado a uma tela exclusiva para esse fim, mostrando quais são os formatos permitidos de imagens. Destaca-se que a definição do <em>upload</em> de uma única imagem possibilitou a análise rápida do modelo, gerando os resultados em poucos segundos de espera, tornando-se um apoio a decisões rápidas e mais assertivas para médicos e profissionais da saúde, mas de forma a não substituir a análise clínica. Além disso, a definição do <em>upload</em> de uma única radiografia também foi pensada na usabilidade de um profissional da área.
+
+Por fim, na página de resultados são demonstradas as análises para a imagem selecionada, bem como gerado um <em>grad-CAM</em>, mapa de calor que auxilia no entendimento das decisões da CNN.
+
+É importante ressaltar que a ferramenta encontra-se em fase de desenvolvimento, ainda não publicada de forma <em>online</em>. As etapas futuras de construção envolvem a adição de novas funcionalidades como o cadastro do usuário e histórico de análises.</p>
