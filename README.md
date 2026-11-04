@@ -64,7 +64,6 @@ Os três modelos do <em>ensemble learning</em> foram treinados por até 50 époc
 
 <p align="justify">Por fim, na etapa de teste, o <em>threshold</em> definiu a classificação final de cada imagem e os pesos do <em>ensemble</em> foram combinados por meio de uma média ponderada.</p>
 
-
 <p align="center">
   <img src="blob/main/imagens/" alt="Funcionamento da rede" width="800">
   <br>
