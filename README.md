@@ -83,5 +83,5 @@ Ao comparar com [Cruz et al. 2026] os resultados obtidos para o novo modelo demo
 <p align="justify">Na identificação do papel de cada uma das técnicas utilizadas realizou-se um estudo de ablação removendo, isoladamente, cada um dos mecanismos. Os resultados encontrados estão presentes na tabela abaixo:</p>
 
 <p align="center">
-  <img src="" alt="tabela 2" width="600">
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tabela%202%20artigo%20eramia.png" alt="tabela 2" width="600">
 </p><br>
