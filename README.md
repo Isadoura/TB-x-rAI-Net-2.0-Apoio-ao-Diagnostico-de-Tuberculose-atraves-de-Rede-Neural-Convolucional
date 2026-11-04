@@ -48,7 +48,7 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 ## Divisão dos dados de treinamento, validação e teste
 <p align="justify">A estratégia de divisão definida utilizou uma proporção de 70% das imagens para treino, 15% para validação e 15% para teste. Antes de realizar a separação da base dos dados ocorre uma identificação a nível de paciente para cada uma das radiografias usadas no modelo e remoção de imagens duplicadas. Isso permitiu evitar que uma mesma radiografia de um determinado paciente aparecesse de maneira simultânea em mais de um conjunto.
 
-Na etapa de <strong>treino</strong>, são definidos lotes contendo 16 imagens e essas são embaralhadas a cada época, de forma que a rede nunca receba a mesma sequência. Ademais, é aplicado aumento de dados (<em>data augmentation</em>) por meio do <em>ImageDataGenerator<em> da biblioteca <em>Keras</em>. As transformações aplicadas nas radiografias envolvem: </p>
+Na etapa de <strong>treino</strong>, são definidos lotes contendo 16 imagens e essas são embaralhadas a cada época, de forma que a rede nunca receba a mesma sequência. Ademais, é aplicado aumento de dados (<em>data augmentation</em>) por meio do *ImageDataGenerator* da biblioteca <em>Keras</em>. As transformações aplicadas nas radiografias envolvem: </p>
 
 - Rotações;
 - Deslocamentos verticais e horizontais;
