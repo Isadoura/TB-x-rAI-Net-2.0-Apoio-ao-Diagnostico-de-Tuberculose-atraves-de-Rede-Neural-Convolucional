@@ -39,7 +39,7 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 - Modelo 3: Filtro de 128 e *dropout* de 0,5.
 
 <p align="center">
-  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png" alt="Arquitetura da CNN proposta" width="800">
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png" alt="Arquitetura da CNN proposta" width="600">
   <br>
   <strong>Figura 1</strong>: Arquitetura da CNN proposta.
 </p><br>
@@ -65,7 +65,7 @@ Os três modelos do <em>ensemble learning</em> foram treinados por até 50 époc
 <p align="justify">Por fim, na etapa de <strong>teste</strong>, o <em>threshold</em> definiu a classificação final de cada imagem e os pesos do <em>ensemble</em> foram combinados por meio de uma média ponderada.</p>
 
 <p align="center">
-  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/Arquitetura%20da%20rede%20(12).png" alt="Funcionamento da rede" width="800">
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/Arquitetura%20da%20rede%20(12).png" alt="Funcionamento da rede" width="600">
   <br>
   <strong>Figura 2</strong>: Resumo do funcionamento da TB x-rAI Net 2.0.
 </p><br>
@@ -77,11 +77,11 @@ Os três modelos do <em>ensemble learning</em> foram treinados por até 50 époc
 Ao comparar com [Cruz et al. 2026] os resultados obtidos para o novo modelo demonstraram seu potencial para a identificação da Tuberculose, na qual a adição de novas técnicas como o filtro <em>CLAHE</em> pode melhorar as métricas encontradas. </p>
 
 <p align="center">
-  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tabela%201%20trabalho%20eramia.png" alt="tabela 1" width="500">
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tabela%201%20trabalho%20eramia.png" alt="tabela 1" width="600">
 </p><br>
 
 <p align="justify">Na identificação do papel de cada uma das técnicas utilizadas realizou-se um estudo de ablação removendo, isoladamente, cada um dos mecanismos. Os resultados encontrados estão presentes na tabela abaixo:</p>
 
 <p align="center">
-  <img src="" alt="tabela 2" width="500">
+  <img src="" alt="tabela 2" width="600">
 </p><br>
