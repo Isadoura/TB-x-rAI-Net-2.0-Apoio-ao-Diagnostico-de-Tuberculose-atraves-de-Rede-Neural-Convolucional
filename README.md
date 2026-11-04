@@ -40,5 +40,5 @@ O modelo também utiliza três modelos idênticos porém com configurações dis
 <p align="center">
   <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png" alt="Arquitetura da CNN proposta" width="800">
   <br>
-  <em><strong>Figura 1</strong>: Arquitetura da CNN proposta.</em>
+  <strong>Figura 1</strong>: Arquitetura da CNN proposta.
 </p>
