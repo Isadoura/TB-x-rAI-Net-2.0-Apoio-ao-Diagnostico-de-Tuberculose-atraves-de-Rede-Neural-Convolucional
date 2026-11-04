@@ -69,3 +69,19 @@ Os três modelos do <em>ensemble learning</em> foram treinados por até 50 époc
   <br>
   <strong>Figura 2</strong>: Resumo do funcionamento da TB x-rAI Net 2.0.
 </p><br>
+
+## Resultados experimentais
+
+<p align="justify">A tabela 1, apresentada abaixo, demonstra o desempenho da TB x-rAI Net 2.0, comparando-a com outros modelos como [Pasa et al. 2019], [Sun et al. 2024] e com o método inicial, o TB x-rAI [Cruz et al. 2026]. Destaca-se que os primeiros estudos apresentam semelhanças com a CNN desenvolvida, porém com algumas ressalvas ao contexto experimental, sendo necessária uma análise cautelosa. 
+
+Ao comparar com [Cruz et al. 2026] os resultados obtidos para o novo modelo demonstraram seu potencial para a identificação da Tuberculose, na qual a adição de novas técnicas como o filtro <em>CLAHE</em> pode melhorar as métricas encontradas. </p>
+
+<p align="center">
+  <img src="" alt="Funcionamento da rede" width="800">
+</p><br>
+
+<p align="justify">Na identificação do papel de cada uma das técnicas utilizadas realizou-se um estudo de ablação removendo, isoladamente, cada um dos mecanismos. Os resultados encontrados estão presentes na tabela abaixo:</p>
+
+<p align="center">
+  <img src="" alt="Funcionamento da rede" width="800">
+</p><br>
