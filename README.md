@@ -77,11 +77,11 @@ Os três modelos do <em>ensemble learning</em> foram treinados por até 50 époc
 Ao comparar com [Cruz et al. 2026] os resultados obtidos para o novo modelo demonstraram seu potencial para a identificação da Tuberculose, na qual a adição de novas técnicas como o filtro <em>CLAHE</em> pode melhorar as métricas encontradas. </p>
 
 <p align="center">
-  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tabela%201%20trabalho%20eramia.png" alt="tabela 1" width="800">
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tabela%201%20trabalho%20eramia.png" alt="tabela 1" width="500">
 </p><br>
 
 <p align="justify">Na identificação do papel de cada uma das técnicas utilizadas realizou-se um estudo de ablação removendo, isoladamente, cada um dos mecanismos. Os resultados encontrados estão presentes na tabela abaixo:</p>
 
 <p align="center">
-  <img src="" alt="tabela 2" width="800">
+  <img src="" alt="tabela 2" width="500">
 </p><br>
