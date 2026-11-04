@@ -88,7 +88,7 @@ Ao comparar com [Cruz et al. 2026] os resultados obtidos para o novo modelo demo
 
 <p align="justify"> De acordo com o estudo de ablação, nota-se que a remoção individual de cada técnica reduziu o desempenho do modelo completo. Cabe destacar o impacto referente a remoção do <em>ensemble learning</em>, mecanismo <em>SE</em> e <em>CLAHE</em>, o qual diminuiu a acurácia e a sensibilidade. Embora a retirada das estratégias citadas tenham exibido uma precisão superior ao modelo completo, o uso combinado dessas elevou os valores encontrados nas demais medidas.
 
-Para trabalhos futuros propõe-se realizar a validação da TB x-rAI Net 2.0 com profissionais da área de saúde, adicionar uma base de dados local, proveniente do Hospital HU da FURG e seguir melhorando o modelo.</p>
+Para trabalhos futuros propõe-se realizar a validação da TB x-rAI Net 2.0 com profissionais da área de saúde, adicionar uma base de dados local, proveniente do Hospital HU da FURG e seguir melhorando o modelo.</p><br>
 
 ## Extra:
 
