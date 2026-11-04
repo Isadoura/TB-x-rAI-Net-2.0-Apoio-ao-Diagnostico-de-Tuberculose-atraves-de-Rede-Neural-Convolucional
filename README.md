@@ -20,7 +20,7 @@ A base de Nova Délhi contém 278 radiografias com 138 casos normais e 125 casos
 A base de Montgomery contém 138 radiografias com 80 casos normais e 58 TB-positivos;<br>
 A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de Tuberculose.
 
-<strong>Total de imagens : 1382</strong><br>
+<p align="justify"><strong>Total de imagens : 1382</strong></p><br>
 
 
 ## Pré-processamento:
