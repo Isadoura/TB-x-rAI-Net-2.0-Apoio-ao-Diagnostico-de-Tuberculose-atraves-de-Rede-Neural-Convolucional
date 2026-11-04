@@ -42,3 +42,9 @@ O modelo também utiliza três modelos idênticos porém com configurações dis
   <br>
   <strong>Figura 1</strong>: Arquitetura da CNN proposta.
 </p>
+
+## Treinamento da rede 
+<p align="justify">O treinamento da TB x-rAI Net 2.0 foi realizado no ambiente virtual do *Google Colab* utilizando uma GPU Nvidia T4 Tensor Core. A CNN foi treinada a partir de um *script* Python por meio das bibliotecas *TensorFlow*, *Keras*, *NumPy*, *Matplotlib* e *Scikit-Learn*. </p>
+
+## Divisão dos dados de treinamento, validação e teste
+
