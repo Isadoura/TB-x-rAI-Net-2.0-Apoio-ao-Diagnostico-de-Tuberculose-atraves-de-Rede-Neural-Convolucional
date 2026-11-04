@@ -29,7 +29,7 @@ aplicado o filtro *CLAHE*, permitindo melhorar o contraste dos raios-x.</p>
 
 ## Arquitetura da rede:
 
-<p text-align="justify">A arquitetura da rede desenvolvida utiliza cinco blocos convolucionais residuais, permitindo que informações vindas das entradas (radiografias) sejam preservadas e combinadas com as características adquiridas ao longo das operações de convolução. Em cada um dos blocos são aplicadas duas convoluções 3x3, seguidas de um *BatchNormalization* de tamanho 16, função de ativação ReLU, mecanismo de atenção *Squeeze-and-Excitation* (SE), para a definição da importância dos canais da rede e recalibração desses canais. Além disso, é utilizada uma operação de *Max Pooling*, na redução do custo computacional da CNN, diminuição espacial e na preservação de ativações mais elevadas, uma camada *GAP* (*Global Average Pooling*), realizando o cálculo da média dos valores dos canais, obtidos anteriormente no *Max Pooling*. Ao fim, o método aplica *dropout* para reduzir o *overfitting* e utiliza uma camada totalmente conectada com uma ativação *Sigmoid*, para a geração binária das classificações (TB e Saudável).</p>
+<p text-align="justify">A arquitetura da rede desenvolvida utiliza cinco blocos convolucionais residuais, permitindo que informações vindas das entradas (radiografias) sejam preservadas e combinadas com as características adquiridas ao longo das operações de convolução. Em cada um dos blocos são aplicadas duas convoluções 3x3, seguidas de um *BatchNormalization* de tamanho 16, função de ativação ReLU, mecanismo de atenção *Squeeze-and-Excitation* (SE), para a definição da importância dos canais da rede e recalibração desses canais. Além disso, é utilizada uma operação de *Max Pooling*, na redução do custo computacional da CNN, diminuição espacial e na preservação de ativações mais elevadas, uma camada *GAP* (*Global Average Pooling*), realizando o cálculo da média dos valores dos canais, obtidos anteriormente no *Max Pooling*. Ao fim, o método aplica *dropout* para reduzir o *overfitting* e utiliza uma camada totalmente conectada com uma ativação *Sigmoid*, para a geração binária das classificações (TB e Saudável). </p>
 
 O modelo também utiliza três modelos idênticos porém com configurações distintas de filtros iniciais e taxas de *dropout*, entre os quais:
 
@@ -39,4 +39,4 @@ O modelo também utiliza três modelos idênticos porém com configurações dis
 
 ![Arquitetura da CNN proposta](https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png)
 
-<p text-align="center">**Figura 1**: Arquitetura da TB x-rAI Net 2.0.</p>
+<p text-align="center">**Figura 1**: Arquitetura da TB x-rAI Net 2.0. </p>
