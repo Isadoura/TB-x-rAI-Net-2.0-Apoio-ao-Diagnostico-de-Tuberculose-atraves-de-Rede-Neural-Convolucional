@@ -4,8 +4,7 @@ TB x-rAI Net 2.0: Evolução no Apoio ao Diagnóstico de Tuberculose em Imagens 
 
 <p align="justify">Este repositório apresenta um modelo de Rede Neural Convolucional desenvolvido para o apoio ao diagnóstico da Tuberculose (TB) a partir de imagens radiológicas. O objetivo deste estudo é desenvolver um método que seja capaz de oferecer apoio aos profissionais da área da saúde a tomarem decisões com maior rapidez e precisão. Cabe ressaltar que a TB x-rAI Net 2.0 não substitui o diagnóstico médico.
 
-O treinamento do modelo foi realizado no ambiente do *Google Colab* utilizando uma GPU Nvidia T4 Tensor Core a partir de um *script* em linguagem Python com a 
-utilização das bibliotecas *TensorFlow*, *Keras*, *NumPy*, *Matplotlib* e *Scikit-Learn*. </p>
+O treinamento do modelo foi realizado no ambiente do <em>Google Colab</em> utilizando uma GPU Nvidia T4 Tensor Core a partir de um <em>script</em> em linguagem Python com a utilização das bibliotecas <em>TensorFlow</em>, <em>Keras</em>, <em>NumPy</em>, <em>Matplotlib</em> e <em>Scikit-Learn</em>. </p>
 
 
 ## Base de dados:
@@ -31,7 +30,7 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 
 ## Arquitetura da rede:
 
-<p align="justify">A arquitetura da rede desenvolvida utiliza cinco blocos convolucionais residuais, permitindo que informações vindas das entradas (radiografias) sejam preservadas e combinadas com as características adquiridas ao longo das operações de convolução. Em cada um dos blocos são aplicadas duas convoluções 3x3, seguidas de um <em>BatchNormalization</em> de tamanho 16, função de ativação ReLU, mecanismo de atenção <em>Squeeze-and-Excitation</em> (SE), para a definição da importância dos canais da rede e recalibração desses canais. Além disso, é utilizada uma operação de <em>Max Pooling</em>, na redução do custo computacional da CNN, diminuição espacial e na preservação de ativações mais elevadas, uma camada <em>GAP</em> (<em>Global Average Pooling</em>), realizando o cálculo da média dos valores dos canais, obtidos anteriormente no *Max Pooling*. Ao fim, o método aplica *dropout* para reduzir o *overfitting* e utiliza uma camada totalmente conectada com uma ativação *Sigmoid*, para a geração binária das classificações (TB e Saudável). </p>
+<p align="justify">A arquitetura da rede desenvolvida utiliza cinco blocos convolucionais residuais, permitindo que informações vindas das entradas (radiografias) sejam preservadas e combinadas com as características adquiridas ao longo das operações de convolução. Em cada um dos blocos são aplicadas duas convoluções 3x3, seguidas de um <em>BatchNormalization</em> de tamanho 16, função de ativação ReLU, mecanismo de atenção <em>Squeeze-and-Excitation</em> (<em>SE</em>), para a definição da importância dos canais da rede e recalibração desses canais. Além disso, é utilizada uma operação de <em>Max Pooling</em>, na redução do custo computacional da CNN, diminuição espacial e na preservação de ativações mais elevadas, uma camada <em>GAP</em> (<em>Global Average Pooling</em>), realizando o cálculo da média dos valores dos canais, obtidos anteriormente no <em>Max Pooling</em>. Ao fim, o método aplica <em>dropout</em> para reduzir o <em>overfitting</em> e utiliza uma camada totalmente conectada com uma ativação <em>Sigmoid</em>, para a geração binária das classificações (TB e Saudável). </p>
 
 O modelo também utiliza três modelos idênticos porém com configurações distintas de filtros iniciais e taxas de *dropout*, entre os quais:
 
@@ -47,7 +46,7 @@ O modelo também utiliza três modelos idênticos porém com configurações dis
 
 
 ## Treinamento da rede 
-<p align="justify">O treinamento da TB x-rAI Net 2.0 foi realizado no ambiente virtual do *Google Colab* utilizando uma GPU Nvidia T4 Tensor Core. A CNN foi treinada a partir de um *script* Python por meio das bibliotecas *TensorFlow*, *Keras*, *NumPy*, *Matplotlib* e *Scikit-Learn*. </p>
+<p align="justify">O treinamento da TB x-rAI Net 2.0 foi realizado no ambiente virtual do <em>Google Colab</em> utilizando uma GPU Nvidia T4 Tensor Core. A CNN foi treinada a partir de um <em>script</em> Python por meio das bibliotecas <em>TensorFlow</em>, <em>Keras</em>, <em>NumPy</em>, <em>Matplotlib</em> e <em>Scikit-Learn</em>. </p>
 
 
 ## Divisão dos dados de treinamento, validação e teste
