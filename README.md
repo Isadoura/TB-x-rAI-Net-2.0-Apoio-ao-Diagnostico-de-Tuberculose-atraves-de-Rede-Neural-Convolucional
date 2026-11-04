@@ -96,7 +96,7 @@ Para trabalhos futuros propõe-se realizar a validação da TB x-rAI Net 2.0 com
 
 Com base nisso, o <site> foi desenvolvido utilizando no <em>frontend</em> o <em>JavaScript</em>, HTML e <em>Tailwind CSS</em> para a geração de um <em>layout</em> responsivo e estilizado. Para a integração com a CNN utilizou-se o <em>microframework Flask</em> do Python, permitindo a obtenção de resultados em tempo real.</p>
 
-<p align="justify"> A ferramenta possui três telas principais, como demonstrado nas figuras logo abaixo: </p>
+A ferramenta possui três telas principais, como demonstrado nas figuras logo abaixo:
 - Tela de início com as principais informações;<br>
 - Tela de *upload*;<br>
 - Tela de resultados.
