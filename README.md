@@ -1,10 +1,10 @@
 <h1 align="center">
 TB x-rAI Net 2.0: Evolução no Apoio ao Diagnóstico de Tuberculose em Imagens Radiológicas através de Rede Neural Convolucional
-</h1>
+</h1><br>
 
 <p align="justify">Este repositório apresenta um modelo de Rede Neural Convolucional desenvolvido para o apoio ao diagnóstico da Tuberculose (TB) a partir de imagens radiológicas. O objetivo deste estudo é desenvolver um método que seja capaz de oferecer apoio aos profissionais da área da saúde a tomarem decisões com maior rapidez e precisão. Cabe ressaltar que a TB x-rAI Net 2.0 não substitui o diagnóstico médico.
 
-O treinamento do modelo foi realizado no ambiente do <em>Google Colab</em> utilizando uma GPU Nvidia T4 Tensor Core a partir de um <em>script</em> em linguagem Python com a utilização das bibliotecas <em>TensorFlow</em>, <em>Keras</em>, <em>NumPy</em>, <em>Matplotlib</em> e <em>Scikit-Learn</em>. </p>
+O treinamento do modelo foi realizado no ambiente do <em>Google Colab</em> utilizando uma GPU Nvidia T4 Tensor Core a partir de um <em>script</em> em linguagem Python com a utilização das bibliotecas <em>TensorFlow</em>, <em>Keras</em>, <em>NumPy</em>, <em>Matplotlib</em> e <em>Scikit-Learn</em>. </p><br>
 
 
 ## Base de dados:
@@ -20,12 +20,12 @@ A base de Nova Délhi contém 278 radiografias com 138 casos normais e 125 casos
 A base de Montgomery contém 138 radiografias com 80 casos normais e 58 TB-positivos;<br>
 A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de Tuberculose.
 
-**Total de imagens : 1382**
+**Total de imagens : 1382**<br>
 
 
 ## Pré-processamento:
 
-<p align="justify">Nesta etapa, as imagens passam por uma transformação para uma escala de cinza, são todas redimensionadas para 256x256 <em>pixels</em>. Além disso, a fim de evitar <em>data leakage</em> foram removidas imagens duplicadas, resultando em um total de 1378 imagens, após a remoção de 4 imagens do <em>dataset</em> de Belarus. Ademais, foi aplicado o filtro <em>CLAHE</em>, permitindo melhorar o contraste dos raios-x. </p>
+<p align="justify">Nesta etapa, as imagens passam por uma transformação para uma escala de cinza, são todas redimensionadas para 256x256 <em>pixels</em>. Além disso, a fim de evitar <em>data leakage</em> foram removidas imagens duplicadas, resultando em um total de 1378 imagens, após a remoção de 4 imagens do <em>dataset</em> de Belarus. Ademais, foi aplicado o filtro <em>CLAHE</em>, permitindo melhorar o contraste dos raios-x. </p><br>
 
 
 ## Arquitetura da rede:
@@ -42,7 +42,7 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
   <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png" alt="Arquitetura da CNN proposta" width="800">
   <br>
   <strong>Figura 1</strong>: Arquitetura da CNN proposta.
-</p>
+</p><br>
 
 
 ## Divisão dos dados de treinamento, validação e teste
