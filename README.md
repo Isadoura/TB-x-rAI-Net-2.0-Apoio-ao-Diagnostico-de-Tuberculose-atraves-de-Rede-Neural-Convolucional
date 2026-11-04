@@ -39,7 +39,7 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 - Modelo 3: Filtro de 128 e *dropout* de 0,5.
 
 <p align="center">
-  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png" alt="Arquitetura da CNN proposta" width="700">
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png" alt="Arquitetura da CNN proposta" width="800">
   <br>
   <strong>Figura 1</strong>: Arquitetura da CNN proposta.
 </p><br>
