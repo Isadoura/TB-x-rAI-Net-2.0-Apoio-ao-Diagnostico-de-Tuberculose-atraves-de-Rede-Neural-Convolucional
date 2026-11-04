@@ -30,9 +30,9 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 
 ## Arquitetura da rede:
 
-<p align="justify">A arquitetura da rede desenvolvida utiliza cinco blocos convolucionais residuais, permitindo que informações vindas das entradas (radiografias) sejam preservadas e combinadas com as características adquiridas ao longo das operações de convolução. Em cada um dos blocos são aplicadas duas convoluções 3x3, seguidas de um <em>BatchNormalization</em> de tamanho 16, função de ativação ReLU, mecanismo de atenção <em>Squeeze-and-Excitation</em> (<em>SE</em>), para a definição da importância dos canais da rede e recalibração desses canais. Além disso, é utilizada uma operação de <em>Max Pooling</em>, na redução do custo computacional da CNN, diminuição espacial e na preservação de ativações mais elevadas, uma camada <em>GAP</em> (<em>Global Average Pooling</em>), realizando o cálculo da média dos valores dos canais, obtidos anteriormente no <em>Max Pooling</em>. Ao fim, o método aplica <em>dropout</em> para reduzir o <em>overfitting</em> e utiliza uma camada totalmente conectada com uma ativação <em>Sigmoid</em>, para a geração binária das classificações (TB e Saudável). </p>
+<p align="justify">A arquitetura da rede desenvolvida utiliza cinco blocos convolucionais residuais, permitindo que informações vindas das entradas (radiografias) sejam preservadas e combinadas com as características adquiridas ao longo das operações de convolução. Em cada um dos blocos são aplicadas duas convoluções 3x3, seguidas de um <em>BatchNormalization</em>, função de ativação ReLU, mecanismo de atenção <em>Squeeze-and-Excitation</em> (<em>SE</em>), para a definição da importância dos canais da rede e recalibração desses canais. Além disso, é utilizada uma operação de <em>Max Pooling</em>, na redução do custo computacional da CNN, diminuição espacial e na preservação de ativações mais elevadas, uma camada <em>GAP</em> (<em>Global Average Pooling</em>), realizando o cálculo da média dos valores dos canais, obtidos anteriormente no <em>Max Pooling</em>. Ao fim, o método aplica <em>dropout</em> para reduzir o <em>overfitting</em> e utiliza uma camada totalmente conectada com uma ativação <em>Sigmoid</em>, para a geração binária das classificações (TB e Saudável). </p>
 
-O modelo também utiliza três modelos idênticos porém com configurações distintas de filtros iniciais e taxas de *dropout*, entre os quais:
+O modelo também utiliza três modelos idênticos (<em>ensemble learning</em>) porém com configurações distintas de filtros iniciais e taxas de *dropout*, entre os quais:
 
 - Modelo 1: Filtro de 32 e *dropout* de 0,3;
 - Modelo 2: Filtro de 64 e *dropout* de 0,4;
@@ -46,4 +46,19 @@ O modelo também utiliza três modelos idênticos porém com configurações dis
 
 
 ## Divisão dos dados de treinamento, validação e teste
+<p align="justify">A estratégia de divisão definida utilizou uma proporção de 70% das imagens para treino, 15% para validação e 15% para teste. Antes de realizar a separação da base dos dados ocorre uma identificação a nível de paciente para cada uma das radiografias usadas no modelo e remoção de imagens duplicadas. Isso permitiu evitar que uma mesma radiografia de um determinado paciente aparecesse de maneira simultânea em mais de um conjunto.
 
+Na etapa de <strong>treino</strong>, são definidos lotes contendo 16 imagens e essas são embaralhadas a cada época, de forma que a rede nunca receba a mesma sequência. Ademais, é aplicado aumento de dados (<em>data augmentation</em>) por meio do <em>ImageDataGenerator<em> da biblioteca <em>Keras</em>. As transformações aplicadas nas radiografias envolvem: </p>
+
+- Rotações;
+- Deslocamentos verticais e horizontais;
+- Zoom;
+- Alterações no brilho;
+- Espelhamento horizontal;
+- Cisalhamento.
+
+<p align="justify">Cabe ressaltar que a técnica de <em>data augmentation</em> é aplicada somente aos dados de treinamento da CNN.
+Os três modelos do <em>ensemble learning</em> foram treinados por até 50 épocas, em momentos que o método não apresentava melhora o treinamento do modelo encerrava. Isso foi definido por meio do <em>Early Stopping</em>, como uma outra estratégia para o combate ao <em>overfitting</em>. O otimizador <em>Adam</em> também foi aplicado com uma taxa de aprendizado de 10<sub>-4</sub> e o <em>Reduce LR On Plateau</em>.
+</p>.
+
+<p align="justify">Já na etapa de <strong>validação</strong>
