@@ -15,9 +15,9 @@ Para o desenvolvimento e construção da CNN proposta foram utilizados quatro *d
 - *Montgomery Conty* (EUA) - [Raddar 2020]
 - *Shenzhen* (China) - [Mengzhang 2024]
 
-A base de Belarus contém 304 radiografias todas elas TB-positivas;
-A base de Nova Délhi contém 278 radiografias com 138 casos normais e 125 casos de Tuberculose;
-A base de Montgomery contém 138 radiografias com 80 casos normais e 58 TB-positivos;
+A base de Belarus contém 304 radiografias todas elas TB-positivas;<br>
+A base de Nova Délhi contém 278 radiografias com 138 casos normais e 125 casos de Tuberculose;<br>
+A base de Montgomery contém 138 radiografias com 80 casos normais e 58 TB-positivos;<br>
 A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de Tuberculose.
 
 **Total de imagens : 1382**
