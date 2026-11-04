@@ -39,8 +39,7 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 - Modelo 3: Filtro de 128 e *dropout* de 0,5.
 
 <p align="center">
-  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png" alt="Arquitetura da CNN proposta" width="700">
-  <br>
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/arquiteturacnn.drawio.png" alt="Arquitetura da CNN proposta" width="700"><br>
   <strong>Figura 1</strong>: Arquitetura da CNN proposta.
 </p><br>
 
@@ -65,8 +64,7 @@ Os três modelos do <em>ensemble learning</em> foram treinados por até 50 époc
 <p align="justify">Por fim, na etapa de <strong>teste</strong>, o <em>threshold</em> definiu a classificação final de cada imagem e os pesos do <em>ensemble</em> foram combinados por meio de uma média ponderada.</p>
 
 <p align="center">
-  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/Arquitetura%20da%20rede%20(12).png" alt="Funcionamento da rede" width="700">
-  <br>
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/Arquitetura%20da%20rede%20(12).png" alt="Funcionamento da rede" width="700"><br>
   <strong>Figura 2</strong>: Resumo do funcionamento da TB x-rAI Net 2.0.
 </p><br>
 
@@ -102,34 +100,29 @@ A ferramenta possui três telas principais, como demonstrado nas figuras logo ab
 - Tela de resultados.
 
 <p align="center">
-  <img src="" alt="Tela principal do site" width="700">
-  <br>
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tela%20principal.png" alt="Tela principal do site" width="700"><br>
   <strong>Figura 3</strong>: Tela de início do <em>website</em>.
-</p><br>" 
+</p><br>
 
 <p align="center">
-  <img src="" alt="Tela de upload do site" width="700">
-  <br>
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tela%20upload%20reduzida.png" alt="Tela de upload do site" width="700"><br>
   <strong>Figura 4</strong>: Tela de <em>upload</em> do <em>website</em>.
-</p><br>"
+</p><br>
 
 <p align="center">
-  <img src="" alt="Tela de resultados do site" width="700">
-  <br>
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tela%20de%20resultados%201.png" alt="Tela de resultados do site" width="700"><br>
   <strong>Figura 5</strong>: Tela de resultados do <em>website</em> - parte 1.
-</p><br>"
+</p><br>
 
 <p align="center">
-  <img src="" alt="Tela de resultados do site" width="700">
-  <br>
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tela%20de%20resultados%202.png" alt="Tela de resultados do site" width="700"><br>
   <strong>Figura 6</strong>: Tela de resultados do <em>website</em> - parte 2.
-</p><br>"
+</p><br>
 
 <p align="center">
-  <img src="" alt="Tela de resultados do site" width="700">
-  <br>
+  <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/tela%20de%20resultados%203.png" alt="Tela de resultados do site" width="700"><br>
   <strong>Figura 6</strong>: Tela de resultados do <em>website</em> - parte 3.
-</p><br>"
+</p><br>
 
 
 <p align=justify> Conforme ilustrado na figura 1, a página inicial apresenta aos usuários um menu interativo que permite uma navegação facilitada, juntamente com um panorama geral das funcionalidades e propósito da ferramenta, seguido da documentação do modelo, da referência à CNN base e de exemplos de <em>datasets</em> com imagens públicas de TB.  
@@ -139,3 +132,27 @@ Para realizar o <em>upload</em> das radiografias (figura 2), o usuário é redir
 Por fim, na página de resultados são demonstradas as análises para a imagem selecionada, bem como gerado um <em>grad-CAM</em>, mapa de calor que auxilia no entendimento das decisões da CNN.
 
 É importante ressaltar que a ferramenta encontra-se em fase de desenvolvimento, ainda não publicada de forma <em>online</em>. As etapas futuras de construção envolvem a adição de novas funcionalidades como o cadastro do usuário e histórico de análises.</p>
+
+### Referências:
+
+<p align="justify"> Chauhan, A., Chauhan, D., Rout, C. (2014). Role of Gist and PHOG Features in Computer-Aided Diagnosis of Tuberculosis without Segmentation. National Library of Medicine, 9(11). 
+  
+Chollet, F. et al. (2015). Keras, https://keras.io. Acesso em: Janeiro de 2026. 
+
+Cruz, I., M., R., Machado, K., S. (2026). TB x-rAI: Apoio ao Diagnóstico de Tuberculose em Imagens Radiológicas através de Rede Neural Convolucional e 
+Aplicação Web. In Anais estendidos do XXVI Simpósio Brasileiro de Computação Aplicada à Saúde, pages 323-328. SBC. 
+
+Frapa (2021).  A convolutional neural network for tuberculosis diagnosis from frontal chest x-rays, https://www.github.com/frapa/tbcnn. Acesso em: Janeiro de 2026.  
+
+Jaeger, S., Karargyris, A., Candemir, S., Siegelman, J., Folio, L., Antani, S., and Thoma, G. (2013). Automatic screening for tuberculosis in chest radiographs: a survey. Quantitative Imaging in Medicine and Surgery, 3(2), pages 89-99. 
+
+Mengzhang, L. (2024). Awesome-Medical-Dataset, https://www.github.com/openmedlab/Awesome-Medical-Dataset/blob/main/resources/Shenzhen_chest_X-ray.md. Acesso em: Janeiro de 2026.  
+
+Pasa, F., Golkov, V.,  Pfeiffer, F., Cremers, D., and Pfeiffer, D. (2019). Efficient deep network architectures for fast chest x-ray tuberculosis screening and visualization. Scientific reports, 9(1):6268.   
+
+Raddar (2020). Tuberculosis Chest x-rays (Montgomery), https://www.kaggle.com/datasets/raddar/tuberculosis-chest-xrays-montgomery. Acesso em: Janeiro de 2026.  
+
+Sun, X., Xing, Z., Wan, Z., Ding, W., Wang, L., Zhong, L., Zhou, X., Gong, X., Li, Y., and Zhang, X. (2024). A robust ensemble deep learning framework for accurate diagnoses of tuberculosis from chest radiographs. Frontiers in Medicine, v. 11, 1391184. 
+
+World Health Organization (2016). Chest radiography in tuberculosis detection: summary of current WHO recommendations and guidance on programmatic 
+approaches. World Health Organization. </p>
