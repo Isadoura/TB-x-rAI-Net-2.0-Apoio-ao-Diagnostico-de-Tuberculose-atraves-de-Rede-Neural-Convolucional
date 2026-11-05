@@ -63,6 +63,8 @@ Os três modelos do <em>ensemble learning</em> foram treinados por até 50 époc
 
 <p align="justify">Por fim, na etapa de <strong>teste</strong>, o <em>threshold</em> definiu a classificação final de cada imagem e os pesos do <em>ensemble</em> foram combinados por meio de uma média ponderada.</p>
 
+<p align=justify"> A figura abaixo apresenta um apanhado geral do funcionamento da TB x-rAI Net 2.0: </p>
+
 <p align="center">
   <img src="https://github.com/Isadoura/TB-x-rAI-Net-2.0-Apoio-ao-Diagnostico-de-Tuberculose-atraves-de-Rede-Neural-Convolucional/blob/main/imagens/Arquitetura%20da%20rede%20(12).png" alt="Funcionamento da rede" width="700"><br>
   <strong>Figura 2</strong>: Resumo do funcionamento da TB x-rAI Net 2.0.
