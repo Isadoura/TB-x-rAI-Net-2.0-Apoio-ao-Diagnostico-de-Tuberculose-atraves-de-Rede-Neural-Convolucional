@@ -57,7 +57,7 @@ Na etapa de <strong>treino</strong>, são definidos lotes contendo 16 imagens e 
 - Cisalhamento.
 
 <p align="justify">Cabe ressaltar que a técnica de <em>data augmentation</em> é aplicada somente aos dados de treinamento da CNN.
-Os três modelos do <em>ensemble learning</em> foram treinados por até 50 épocas, em momentos que o método não apresentava melhora, o treinamento do modelo encerrava. Isso foi definido por meio do <em>Early Stopping</em>, como uma outra estratégia para o combate ao <em>overfitting</em>. O otimizador <em>Adam</em> também foi aplicado com uma taxa de aprendizado de 10<sup>-4</sup> e o <em>Reduce LR On Plateau</em>.</p>
+Os três modelos do <em>ensemble learning</em> foram treinados por até 50 épocas, em momentos que o método não apresentava melhora, o treinamento era encerrado. Isso foi definido por meio do <em>Early Stopping</em>, como uma outra estratégia para o combate ao <em>overfitting</em>. O otimizador <em>Adam</em> também foi aplicado com uma taxa de aprendizado de 10<sup>-4</sup> e o <em>Reduce LR On Plateau</em>.</p>
 
 <p align="justify">Já na etapa de <strong>validação</strong> as métricas da AUC, acurácia, sensibilidade, precisão e função de perda foram avaliadas. As probabilidades da função de ativação <em>Sigmoid</em> foram utilizadas para o cálculo da AUC. Essas probabilidades definiram os pesos a serem aplicados a cada um dos modelos de <em>ensemble</em>. O <em>threshold</em> de classificação foi estabelecido por meio do Índice de Youden na curva ROC e métrica da sensibilidade.</p>
 
