@@ -32,7 +32,7 @@ A base de Shenzhen contém 662 radiografias com 326 casos normais e 336 casos de
 
 <p align="justify">A arquitetura da rede desenvolvida utiliza cinco blocos convolucionais residuais, permitindo que informações vindas das entradas (radiografias) sejam preservadas e combinadas com as características adquiridas ao longo das operações de convolução. Em cada um dos blocos são aplicadas duas convoluções 3x3, seguidas de um <em>BatchNormalization</em>, função de ativação ReLU, mecanismo de atenção <em>Squeeze-and-Excitation</em> (<em>SE</em>), para a definição da importância dos canais da rede e recalibração desses canais. Além disso, é utilizada uma operação de <em>Max Pooling</em>, na redução do custo computacional da CNN, diminuição espacial e na preservação de ativações mais elevadas, uma camada <em>GAP</em> (<em>Global Average Pooling</em>), realizando o cálculo da média dos valores dos canais, obtidos anteriormente no <em>Max Pooling</em>. Ao fim, o método aplica <em>dropout</em> para reduzir o <em>overfitting</em> e utiliza uma camada totalmente conectada com uma ativação <em>Sigmoid</em>, para a geração binária das classificações (TB e Saudável). </p>
 
-<p align="justify">O modelo também utiliza três modelos idênticos (<em>ensemble learning</em>) porém com configurações distintas de filtros iniciais e taxas de *dropout*, entre os quais:
+<p align="justify">O modelo também utiliza três modelos idênticos (<em>ensemble learning</em>) porém com configurações distintas de filtros iniciais e taxas de <em>dropout</em>, entre os quais:
 
 - Modelo 1: Filtro de 32 e *dropout* de 0,3;
 - Modelo 2: Filtro de 64 e *dropout* de 0,4;
