@@ -133,7 +133,7 @@ Para realizar o <em>upload</em> das radiografias (figura 2), o usuário é redir
 
 Por fim, na página de resultados são demonstradas as análises para a imagem selecionada, bem como gerado um <em>grad-CAM</em>, mapa de calor que auxilia no entendimento das decisões da CNN.
 
-É importante ressaltar que a ferramenta encontra-se em fase de desenvolvimento, ainda não publicada de forma <em>online</em>. As etapas futuras de construção envolvem a adição de novas funcionalidades como o cadastro do usuário e histórico de análises.</p>
+É importante ressaltar que a ferramenta encontra-se em fase de desenvolvimento, ainda não publicada de forma <em>online</em>. As etapas futuras de construção envolvem a adição de novas funcionalidades como o cadastro do usuário e histórico de análises.</p><br>
 
 ### Referências
 
